@@ -5,7 +5,7 @@ const Restaurant = require('../Controller/RestaurantListController');
 const Mealtype = require('../Controller/MealtypeController');
 const MenuItems = require('../Controller/MenuListsController');
 const Order = require('../Controller/OrdersController');
-const PaymentController = require("../controller/PaymentController");
+const PaymentController = require("../Controller/PaymentController");
 // 1st API which is welcome api
 Router.get('/api', Location.Welcome);
 
