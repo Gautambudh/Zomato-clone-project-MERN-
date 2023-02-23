@@ -14,14 +14,14 @@ function QuickSearch() {
     });
 
     let getLocationListFromServer = async () => {
-        let url = "http://localhost:5003/api/get-Location-list";
+        let url = "https://developer-gautam-zomato-clone.onrender.com/api/get-Location-list";
         let { data } = await axios.get(url);
         // console.log(data);
         setLocationList([...data.Location])
     }
 
     let filter = async () => {
-        let url = "http://localhost:5003/api/filter";
+        let url = "https://developer-gautam-zomato-clone.onrender.com/api/filter";
         
         let { data } = await axios.post(url, filterData);
         // console.log(data);

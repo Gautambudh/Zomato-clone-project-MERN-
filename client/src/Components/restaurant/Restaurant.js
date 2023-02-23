@@ -35,7 +35,7 @@ function Restaurant() {
     let [ totalPrice, setTotalPrice ] = useState(0);
 
     let getRestaurantDetails = async () => {
-        let url = 'http://localhost:5003/api/get-Restaurant-details-by-id/' +id;
+        let url = 'https://developer-gautam-zomato-clone.onrender.com/api/get-Restaurant-details-by-id/' +id;
         let { data } = await axios.get(url);
         // console.log(data)
         if(data.status === true) {
@@ -46,7 +46,7 @@ function Restaurant() {
         }
     };
     let getMenuitems = async () => {
-        let url = 'http://localhost:5003/api/get-MenuItems-by-RestID/' +id;
+        let url = 'https://developer-gautam-zomato-clone.onrender.com/api/get-MenuItems-by-RestID/' +id;
         // console.log("this is getMenuitems id")
         let { data } = await axios.get(url);
         // console.log(data);
@@ -105,7 +105,7 @@ function Restaurant() {
   let makePayment = async () => {
     let userOrder = menuitems.filter((menu) => menu.qty > 0);
 
-    let url = "http://localhost:5003/api/gen-order-id";
+    let url = "https://developer-gautam-zomato-clone.onrender.com/api/gen-order-id";
     let { data } = await axios.post(url, { amount: totalPrice });
 
     if (data.status === false) {
@@ -135,7 +135,7 @@ function Restaurant() {
           totalAmount: totalPrice,
         };
         let { data } = await axios.post(
-          "http://localhost:5003/api/verify-payment",
+          "https://developer-gautam-zomato-clone.onrender.com/api/verify-payment",
           verifyData
         );
         if (data.status === true) {

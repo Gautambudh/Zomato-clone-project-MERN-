@@ -9,7 +9,7 @@ function MealTypes() {
     
 
     let getMenuListFromServer = async () => {
-        let url = "http://localhost:5003/api/get-Mealtype-list";
+        let url = "https://developer-gautam-zomato-clone.onrender.com/api/get-Mealtype-list";
         let { data } = await axios.get(url); //#4
         // console.log(data.Meal_types);
         setMealList([...data.Meal_types])  // #5 used spread operator to recreate the memory 
