@@ -1,0 +1,235 @@
+/* ---------- css reset ------------ */
+
+* {
+    box-sizing: border-box;
+    font-family: poppins;
+    padding: 0;
+    margin: 0;
+}
+
+/* ----------- setting body colour & position:relative ----------------- */
+body {
+    background-color: #fbfbfb;
+    position: relative;
+}
+
+/*--------- background wallpaper---------- */
+
+.bg {
+    height: 480px;
+    background: linear-gradient(180deg, #9D0E0E00 0%, #4F0707 100%),
+    url(./images/shutterstock_348320018@2x.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* ----------media queries for mobile viewport-------- */
+@media screen and (max-width:420px) {
+    .login-createacc {
+        display: none;
+    }
+    .restaurants-selector {
+        margin: 10px 0px;
+        
+    }
+    .tagline {
+        margin-top: 0 !important;
+    }
+    /* ------------------- */
+    .rest-heading {
+        font-size: 25px !important;
+    }
+    .about-place-heading {
+        font-size: 15px;
+    }
+    .order-btn {
+        font-size: 9px;
+    }
+    .overview, .contact {
+        font-size: 10px;
+    }
+}
+.login-createacc {
+    align-items: center;
+    padding: 0px;
+    text-shadow:4px 4px 8px #18191c;
+}
+
+
+/* ----------- navigation bar------------ */
+
+/* .login a, .createacc a {
+    text-decoration: none;
+    padding: 10px;
+    font: normal normal medium 16px/25px Poppins;
+    text-shadow:4px 4px 8px #18191c;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+} */
+/* .createacc{
+    border: 1px solid white;
+} */
+
+/* ------------ logo ---------- */
+
+.logo a {
+    border-radius: 50%;
+    border: 0 solid ;
+    text-decoration: none;
+    font: normal normal 600 70px/106px Poppins;
+    letter-spacing: 0px;
+    color: #EB2929;
+    opacity: 1;
+    background-color: white;
+    padding: 6px 24px;
+}
+
+/* ------------ restaurant tagline -------------- */
+
+.tagline {
+    margin-top: 20px;
+    font: normal normal 600 36px/55px Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-shadow:4px 4px 8px #18191c;
+}
+
+/* ------------- searchbar for location selection & restaurant search -------------- */
+
+.searchbar {
+    margin-top: 10px;
+}
+.search-rest {
+    font-family: fontawesome;
+    font-size: 1 rem;
+    width: 100%;
+}
+.location-selector {
+    height: 28px;
+    font-family: fontawesome;
+    font-size: 1 rem;
+    width: 100%;
+}
+
+/* ---------------- bottom section ---------------- */
+
+.heading1, .heading2 {
+    margin-left: -12px;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+.heading1 {
+    color: #192F60;
+    font: normal normal bold 30px/46px Poppins;
+}
+.heading2 {
+    color: #8C96AB;
+    font: normal normal bold 25px/38px Poppins;
+}
+
+/* ----------------- bottom section (all cards) ---------------- */
+
+.cards {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    width: 360px;
+    height: 160px;
+    /* margin-right: auto; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding:0;
+    flex-flow: row wrap;
+}
+.all-cards {
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.img-fluid {
+    height: 160px;
+    width: 160px;
+    padding: 0%;
+}
+.card-title {
+    font: normal normal 600 18px/27px Poppins;
+    letter-spacing: 0px;
+    color: #192F60;
+    opacity: 1;
+}
+.card-text {
+    font: normal normal normal 14px/21px Poppins;
+    letter-spacing: 0px;
+    color: #8C96AB;
+    opacity: 1;
+}
+.card-body {
+    text-align:left;
+    padding: 30px 53px;
+    display: flex;
+    flex-wrap:wrap
+}
+.cards {
+    display: flex;
+    
+}
+.card-body {
+    flex-direction: column;
+}
+
+.main-image {
+    height: 55vh;
+}
+.Gallery-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    background-color: rgba(255, 255, 255, 0.631);
+    color:#192F60;
+    font-weight: bold;
+}
+.rest-heading {
+    font-size: 30px;
+    color: #192F60;
+}
+.about-place-heading {
+    color: #192F60;
+    font-size: 20px;
+}
+.addr-price-details {
+    font: normal normal normal 14px/21px Poppins;
+    color: #192F60;
+}
+
+.menu-food-item > img {
+    height: 90px;
+    width: 90px;
+    border-radius: 10px;
+}
+.add {
+    bottom: 0;
+}
+.qty-count {
+    bottom: 5px;
+    z-index: 111;
+    color: black;
+    font-weight: bold;
+}
+.qty {
+    background-color: #FFFFFF;
+    padding: 0 10px;
+    border: 1px solid rgb(48, 47, 47);
+    border-radius: 5px;
+}
+.hand {
+    background-color: #fbfbfb;
+    padding:0 5px;
+    border: 1px solid rgb(48, 47, 47);
+    border-radius: 5px;
+}
+.hand:hover {
+    cursor: pointer;
+    background-color: rgb(2, 2, 2);
+    color: white;
+}

@@ -1,0 +1,299 @@
+[
+  {
+    "_id": {
+      "$oid": "62c18f0cd8264e2ebaab5fe8"
+    },
+    "name": "Domino's",
+    "city": "Delhi",
+    "location_id": 1,
+    "city_id": 1,
+    "locality": "Shalimar Bagh",
+    "thumb": [
+      "assets/dominos.jpg",
+      "assets/dom1.jpg",
+      "assets/dom2.jpg",
+      "assets/dom3.jpg"
+    ],
+    "aggregate_rating": 4.2,
+    "rating_text": "Very Good",
+    "min_price": 666,
+    "contact_number": "919453524651",
+    "cuisine_id": [1, 4],
+    "cuisine": [
+      {
+        "id": 1,
+        "name": "North Indian"
+      },
+      {
+        "id": 4,
+        "name": "Fast Food"
+      }
+    ],
+    "image": "assets/dominos.jpg",
+    "mealtype_id": "1"
+  },
+  {
+    "_id": {
+      "$oid": "62c18f0cd8264e2ebaab5fe5"
+    },
+    "name": "KFC",
+    "city": "Delhi",
+    "location_id": 1,
+    "city_id": 1,
+    "locality": "Shalimar Bagh",
+    "thumb": [
+      "assets/KFC.jpg",
+      "assets/kfc1.jpg",
+      "assets/kfc2.jpg",
+      "assets/kfc3.jpg"
+    ],
+    "aggregate_rating": 4.5,
+    "rating_text": "Excellent",
+    "min_price": 333,
+    "contact_number": "919453524651",
+    "cuisine_id": [2, 4],
+    "cuisine": [
+      {
+        "id": 2,
+        "name": "South Indian"
+      },
+      {
+        "id": 4,
+        "name": "Fast Food"
+      }
+    ],
+    "image": "assets/KFC.jpg",
+    "mealtype_id": 1
+  },
+  {
+    "_id": {
+      "$oid": "62c18f0cd8264e2ebaab5fe6"
+    },
+    "name": "Burger King",
+    "city": "Delhi",
+    "location_id": 1,
+    "city_id": 1,
+    "locality": "Shalimar Bagh",
+    "thumb": [
+      "assets/BK.jpg",
+      "assets/burger1.jpg",
+      "assets/burger2.jpg",
+      "assets/burger3.jpg"
+    ],
+    "aggregate_rating": 4.5,
+    "rating_text": "Excellent",
+    "min_price": 999,
+    "contact_number": "919453524651",
+    "cuisine_id": [2, 4],
+    "cuisine": [
+      {
+        "id": 2,
+        "name": "South Indian"
+      },
+      {
+        "id": 4,
+        "name": "Fast Food"
+      }
+    ],
+    "image": "assets/BK.jpg",
+    "mealtype_id": 1
+  },
+  {
+    "_id": {
+      "$oid": "62c18f0cd8264e2ebaab5fe7"
+    },
+    "name": "Baba Ka Dhaba",
+    "city": "Delhi",
+    "location_id": 5,
+    "city_id": 1,
+    "locality": "Anand Vihar",
+    "thumb": [
+      "assets/BkDhaba.jpg",
+      "assets/baba1.jpg",
+      "assets/baba2.jpg",
+      "assets/baba3.jpg"
+    ],
+    "aggregate_rating": 3.5,
+    "rating_text": "Excellent",
+    "min_price": 599,
+    "contact_number": "919453524651",
+    "cuisine_id": [1, 4],
+    "cuisine": [
+      {
+        "id": 1,
+        "name": "North Indian"
+      },
+      {
+        "id": 4,
+        "name": "Fast Food"
+      }
+    ],
+    "image": "assets/BkDhaba.jpg",
+    "mealtype_id": 2
+  },
+  {
+    "_id": {
+      "$oid": "630f91f9db8e1d9f0daaafa3"
+    },
+    "name": "Mostly Grilly",
+    "city": "Mumbai",
+    "location_id": 5,
+    "city_id": 5,
+    "locality": "Vile Parle East",
+    "thumb": [
+      "assets/grills.jpg",
+      "assets/grills1.jpg",
+      "assets/grills2.jpg",
+      "assets/grills3.jpg"
+    ],
+    "aggregate_rating": 4.5,
+    "rating_text": "Excellent",
+    "min_price": 222,
+    "contact_number": {
+      "$numberLong": "918745524651"
+    },
+    "cuisine_id": [1, 4],
+    "cuisine": [
+      {
+        "id": 1,
+        "name": "North Indian"
+      },
+      {
+        "id": 4,
+        "name": "Fast Food"
+      }
+    ],
+    "image": "assets/grills.jpg",
+    "mealtype_id": 6
+  },
+  {
+    "_id": {
+      "$oid": "630f9249db8e1d9f0daaafa4"
+    },
+    "name": "Cafe S F Xavier",
+    "city": "Goa",
+    "location_id": 7,
+    "city_id": 4,
+    "locality": "Mapusa",
+    "thumb": ["assets/sf.jpg", "assets/sf1.jpg", "assets/sf2.jpg"],
+    "aggregate_rating": 4.5,
+    "rating_text": "Excellent",
+    "min_price": 80,
+    "contact_number": {
+      "$numberLong": "919469524651"
+    },
+    "cuisine_id": [1, 4],
+    "cuisine": [
+      {
+        "id": 1,
+        "name": "North Indian"
+      },
+      {
+        "id": 4,
+        "name": "Fast Food"
+      }
+    ],
+    "image": "assets/sf.jpg",
+    "mealtype_id": 4
+  },
+  {
+    "_id": {
+      "$oid": "630f9370db8e1d9f0daaafaa"
+    },
+    "name": "Mad Over Donuts",
+    "city": "Mumbai",
+    "location_id": 9,
+    "city_id": 5,
+    "locality": "BullaBhai Desai Road",
+    "thumb": ["assets/donut.jpg", "assets/donut2.jpg", "assets/donut3.jpg"],
+    "aggregate_rating": 4.5,
+    "rating_text": "Excellent",
+    "min_price": 150,
+    "contact_number": {
+      "$numberLong": "9194544289651"
+    },
+    "cuisine_id": [1, 4],
+    "cuisine": [
+      {
+        "id": 1,
+        "name": "North Indian"
+      },
+      {
+        "id": 4,
+        "name": "Fast Food"
+      }
+    ],
+    "image": "assets/donut.jpg",
+    "mealtype_id": 6
+  },
+  {
+    "_id": {
+      "$oid": "630bd14976edcf67d8c13808"
+    },
+    "name": "Gopal's",
+    "city": "Chandigarh",
+    "location_id": 6,
+    "city_id": 3,
+    "locality": "VIP Road",
+    "thumb": [
+      "assets/gopal.jpg",
+      "assets/gopal1.jpg",
+      "assets/gopal2.jpg",
+      "assets/gopal3.jpg"
+    ],
+    "aggregate_rating": 4.5,
+    "rating_text": "Excellent",
+    "min_price": 255,
+    "contact_number": {
+      "$numberLong": "9194536651"
+    },
+    "cuisine_id": [1, 4],
+    "cuisine": [
+      {
+        "id": 1,
+        "name": "North Indian"
+      },
+      {
+        "id": 4,
+        "name": "Fast Food"
+      }
+    ],
+    "image": "assets/gopal.jpg",
+    "mealtype_id": 1
+  },
+  {
+    "_id": {
+      "$oid": "630f9528db8e1d9f0daaafab"
+    },
+    "name": "Infantaria",
+    "city": "Goa",
+    "location_id": 6,
+    "city_id": 3,
+    "locality": "Calangute - Baga Rd",
+    "thumb": [
+      "assets/infant.jpg",
+      "assets/infant1.jpg",
+      "assets/infant2.jpg",
+      "assets/infant3.jpg"
+    ],
+    "aggregate_rating": 4.5,
+    "rating_text": "Excellent",
+    "min_price": 455,
+    "contact_number": {
+      "$numberLong": "9194536651"
+    },
+    "cuisine_id": [1, 4],
+    "cuisine": [
+      {
+        "id": 1,
+        "name": "North Indian"
+      },
+      {
+        "id": 4,
+        "name": "Fast Food"
+      }
+    ],
+    "image": "assets/infant.jpg",
+    "mealtype_id": 1
+  }
+]

@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  Poppins;
+}
+.nav {
+    background-color: red;
+    height: 4rem;
+}
+.navigation-bar {
+    justify-content: space-between;
+    align-items:center;
+}
+.navigation-bar > a {
+    font-weight: 600;
+    font-size: 2rem;
+    text-decoration: none;
+    color: tomato;
+    background-color: white;
+    border-radius: 50%;
+    padding: 0rem 0.6rem;
+}
+.Login-createacc {
+    font-weight: 500;
+    align-items: center;
+}
+/* .Login-createacc a {
+    text-decoration: none;
+    color: white;
+} */
+/* .Createacc {
+    border: 2px solid white;
+    padding: 0.6rem 1rem;
+} */
+h1 {
+    color: #192F60;
+    font: normal normal bold 36px/55px Poppins;
+    margin: 1rem 0rem;
+}
+#h5 {
+    font: normal normal normal 14px/21px Poppins;
+    color: #192F60;
+}
+aside {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 20px;
+    width: 260px;
+    height: 682px;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.rest-card {
+    flex-direction: column;
+    padding: 1rem 1rem;
+    gap:1rem;
+    /* width: 794px;
+    height: 291px; */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    
+}
+.rest-card:hover {
+    cursor:pointer;
+}
+.search-result-image {
+    width: 120px;
+    height: 120px;
+}
+.search-result-image > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+  }
+.pages ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+}
+.pages ul li{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #8C96AB;
+    border-radius: 7px;
+    opacity: 1;
+    color: #8C96AB;
+    padding: 4px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 8px;
+}
+@media screen and (max-width:430px) {
+    article {
+        padding: 0 !important;
+    }
+    .rest-heading {
+        font-size: 25px !important;
+    }
+    .about-place-heading {
+        font-size: 15px;
+    }
+    .order-btn {
+        font-size: 9px;
+    }
+    .overview, .contact {
+        font-size: 10px;
+    }
+}
