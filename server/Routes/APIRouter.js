@@ -13,7 +13,7 @@ Router.get('/api/get-Location-list', Location.getLoctaion);
 
 // Router.get('/api/get-Restaurant-list', Restaurant.getRestaurant)
 
-// Router.get('/api/get-Restaurant-list/:cityName', Restaurant.getRestaurantListbyLocid)
+Router.post('/api/search-restaurant', Restaurant.searchRestuarant)
 
 Router.get('/api/get-Restaurant-list-loc-id/:loc_id', Restaurant.getRestaurantListbyLocid);
 

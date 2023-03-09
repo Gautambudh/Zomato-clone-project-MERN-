@@ -1,9 +1,14 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import LoginButton from "../CommonLogin/Login";
+import { useNavigate } from "react-router-dom";
 
 function MainHeader() {
+    let navigate = useNavigate();
     let [ locationList, setLocationList] = useState([]);
+    let [ LocationID, setLocationID ] = useState("");
+    let [ RestaurantInputText, setRestaurantInputText ] = useState("");
+    let [ searchList, setsearchList ] = useState([]);
 
     let getLocationListFromServer = async () => {
         let url = "https://developer-gautam-zomato-clone.onrender.com/api/get-Location-list";
@@ -11,6 +16,31 @@ function MainHeader() {
         // console.log(data);
         setLocationList([...data.Location])
     }
+
+    
+    let getSelectValue = (event) => {
+        let { value } = event.target 
+        // console.log(value);
+        setLocationID(value)
+    }
+
+    let searchForRestaurant = async (event) => {
+        let { value } = event.target
+        setRestaurantInputText(value)
+        if (value !== "") {
+            let url = "http://localhost:5003/api/search-restaurant";
+            let { data } = await axios.post(url, {restaurant: value, loc_id: LocationID});
+            // console.log(data);
+            setsearchList(data.result)
+        }
+        
+    }
+
+    useEffect( () => {
+        // console.log("location id changed")
+        setRestaurantInputText("")
+        setsearchList([])
+    }, [LocationID]) ; // on update
 
     useEffect(() => {
         getLocationListFromServer();
@@ -37,7 +67,7 @@ function MainHeader() {
         {/* <!-- ******************** LOGO here ********************************** --> */}
         <div className="row pt-4 logo">
             <div className="col-12 text-center">
-                <a href="#">e!</a>
+                <a href="#">z!</a>
             </div>
         </div>
 
@@ -51,18 +81,43 @@ function MainHeader() {
     {/* <!-- ****************************** searchbar here *************************************** -->    */}
         <div className="row searchbar justify-content-center mx-auto">
         <div className="col-md-2 col-sm-3 col-lg-2 col-11">
-            <select name="location" className="location-selector" >
-                <option value="selected">Select location</option>
+        <select name="location" className="location-selector form-select" placeholder="select location"
+            onChange={getSelectValue}>
+                <option value="">Select location</option>
                 {
                     locationList.map((location, index) => {
-                        return <option value="">{location.name}, {location.city}</option>
+                        return <option key={index} value={location.location_id}>
+                            {location.name}, {location.city}
+                        </option>
                     })
                 }
             </select>
         </div>
         {/* <!-- ************ search icon and input box here ************************** --> */}
         <div className="col-md-4 col-sm-5 col-lg-4 col-11 restaurants-selector" >
-            <input type="search" className="search-rest" placeholder= "&#xf002; Search for restaurants" />
+        <div className="input-group relative">
+        <button className="btn btn-light" id="search-btn" type="button">
+            <i className="fa fa-search" aria-hidden="true"></i>
+          </button>
+          <input type="text" className="form-control" placeholder="Search City" 
+            value={RestaurantInputText}
+            disabled={locationList.length === '' ? true : false}
+            onChange={ searchForRestaurant}
+          />
+            <ul className="list-group absolute bottom-0 w-100">
+          {
+            searchList.map( (rest_name) => {
+                return (
+                    <li key={rest_name._id} className="list-group-item list-group-item-action"
+                    onClick={()=> navigate("/restaurant/"+rest_name._id)}>
+                        {rest_name.name}
+                    </li>
+                )
+            })
+          }
+            </ul>
+        </div>
+            {/* <input type="search" className="search-rest" placeholder= "&#xf002; Search for restaurants" /> */}
         </div>
         </div>
     </div> 

@@ -116,3 +116,15 @@ module.exports.filter = async (req, res) => {
     })}
 }
     
+module.exports.searchRestuarant = async (req, res) => {
+    // let result = await LocationsModel.find({"city_id": 1});
+    let { restaurant, loc_id} = req.body
+    let result = await RestaurantModel.find(
+        { name : { $regex: restaurant + '.*', $options: 'i'},
+        location_id : Number(loc_id)
+    });
+    res.send({
+        status : true,
+        result
+    })
+}

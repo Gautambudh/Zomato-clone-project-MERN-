@@ -8,7 +8,7 @@ function Header() {
         <>   
         <nav className="row nav" >
             <div className="col-lg-10 col-11 m-auto d-flex fs-xs-6 navigation-bar">
-                <a href="#">e!</a>
+                <a href="#">z!</a>
                 {/* <div className="Login-createacc"> */}
                 <LoginButton />
                 {/* </div> */}

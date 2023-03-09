@@ -82,7 +82,7 @@ body {
     color: #EB2929;
     opacity: 1;
     background-color: white;
-    padding: 6px 24px;
+    padding: 0.5px 24px;
 }
 
 /* ------------ restaurant tagline -------------- */
@@ -106,10 +106,16 @@ body {
     width: 100%;
 }
 .location-selector {
-    height: 28px;
+    /* height: 28px; */
     font-family: fontawesome;
     font-size: 1 rem;
     width: 100%;
+}
+#search-btn {
+    border-right:1px solid #8C96AB;
+}
+.list-group li:hover {
+    cursor: pointer;
 }
 
 /* ---------------- bottom section ---------------- */
