@@ -57,7 +57,7 @@ function QuickSearch() {
         <>
         <Header />
         <main className="container-fluid">
-            <section className="row mt-5">
+            <section className="row mt-3">
                 <div className="col-12 col-lg-10 m-auto">
                 <h1 className="fs-xs-6">Breakfast Places in Mumbai</h1>
                 <div className="row gap-lg-3">

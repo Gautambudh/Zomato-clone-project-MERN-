@@ -164,7 +164,7 @@ function Restaurant() {
            <Header />  { /*this header is common from the filter page */} 
            <main className="container-fluid">
             <section className="row mx-auto">
-            <div className="col-12 col-lg-9 col-md-9 mx-auto mt-md-5 mt-3 ">
+            <div className="col-12 col-lg-9 col-md-9 mx-auto mt-md-1 mt-1 ">
                 <div className="position-relative">
                     <img className="mt-md-5 mt-3 main-image w-100" 
                     src='/images/assets/restaurant.jpg' alt=".." />
