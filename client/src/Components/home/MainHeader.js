@@ -28,7 +28,7 @@ function MainHeader() {
         let { value } = event.target
         setRestaurantInputText(value)
         if (value !== "") {
-            let url = "http://localhost:5003/api/search-restaurant";
+            let url = "https://developer-gautam-zomato-clone.onrender.com/api/search-restaurant";
             let { data } = await axios.post(url, {restaurant: value, loc_id: LocationID});
             // console.log(data);
             setsearchList(data.result)
